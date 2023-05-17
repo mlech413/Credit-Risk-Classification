@@ -11,7 +11,7 @@ The following was performed:
 
 ## Results
 
-### Machine learning model 1 - logical regression model with the original training data:  
+### Machine learning model 1 - logical regression model with the original training data
 
 The logical regression model is a very good predictor of healthy loans:  
 
@@ -27,7 +27,7 @@ The logical regression model is a very good predictor of healthy loans:
   ![Confusion Matrix - Original](/Images/Confusion_Matrix_Original.jpg "Confusion Matrix - Original")
 
 
-### Machine learning model 2 - logical regression model with oversampled data:  
+### Machine learning model 2 - logical regression model with oversampled data
 
 When fitting the logical regression model with oversampled data, the model's accuracy showed dramatic improvement in all categories.  
 
@@ -43,7 +43,4 @@ When fitting the logical regression model with oversampled data, the model's acc
 ## Summary
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+* The oversampled model performed better than the original data model. Further reasearch is needed to determine if the increased accuracy is due to such a high number of duplicated high-risk samples, which may have forced the model to contain too many similar rows. For this reason, the oversampled model cannot be used until such the large amount of oversampled data can be determined to be effective and accurate. Incresing the "1" (high-risk) rows from 2,500 to over 75,000 seems excessive, especially since the high-risk "1" rows are the most financially damaging and therefore most important. Until that time, the original data modfel with a lower accuracy (although very still high) should be used with greater confidence.
