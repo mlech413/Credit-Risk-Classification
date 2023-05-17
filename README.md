@@ -7,7 +7,7 @@ This analysis used various techniques to train and evaluate a model based on loa
 The following was performed:
 * The data was split into training and testing sets. Column "loan_status" was split out and contained 0 (for healthy loans) and 1 (high-risk loans). "value_counts" identified 75,036 healthy loans and 2,500 high-risk.
 * A logical regression model was created with the original training data by removing 25% of the results and then using LogisticRegression to train the model. The resulting balanced accuracy score, confusion matrix, and classification report were used to check the results.
-* A logical regression model was also predicted with resampled training data by usiong the RandomOverSampler module from the imbalanced-learn library to resample the data. The minority samples (high-risk loans) were duplicated and increased to match the 75,036 healthy loan samples. The medeling process was then repeated with this data, and the alanced accuracy score, confusion matrix, and classification report were used to check the results.
+* A logical regression model was also predicted with resampled training data by using the RandomOverSampler module from the imbalanced-learn library to resample the data. The minority samples (high-risk loans) were duplicated and increased to match the 75,036 healthy loan samples. The modeling process was then repeated with this data, and the balanced accuracy score, confusion matrix, and classification report were used to check the results.
 
 ## Results
 
@@ -38,9 +38,8 @@ When fitting the logical regression model with oversampled data, the model's acc
 
   * The confusion matirx showed extremely high accuracies.
 
-  ![Confusion Matrix - Original](/Images/Confusion_Matrix_Original.jpg "Confusion Matrix - Original")
+  ![Confusion Matrix - Oversampled](/Images/Confusion_Matrix_Oversampled.jpg "Confusion Matrix - Oversampled")
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* The oversampled model performed better than the original data model. Further reasearch is needed to determine if the increased accuracy is due to such a high number of duplicated high-risk samples, which may have forced the model to contain too many similar rows. For this reason, the oversampled model cannot be used until such the large amount of oversampled data can be determined to be effective and accurate. Incresing the "1" (high-risk) rows from 2,500 to over 75,000 seems excessive, especially since the high-risk "1" rows are the most financially damaging and therefore most important. Until that time, the original data modfel with a lower accuracy (although very still high) should be used with greater confidence.
+The oversampled model performed better than the original data model. Further reasearch is needed to determine if the increased accuracy is due to such a high number of duplicated high-risk samples, which may have forced the model to contain too many similar rows. For this reason, the oversampled model cannot be used until such the large amount of oversampled data can be determined to be effective and accurate. Increasing the "1" (high-risk) rows from 2,500 to over 75,000 seems excessive, especially given that the high-risk "1" rows are the most potentially financially damaging and therefore most important. Until that time, the original data modfel with a lower (although very still high) accuracy should be used with greater confidence.
