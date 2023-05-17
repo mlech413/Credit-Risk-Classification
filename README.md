@@ -26,7 +26,7 @@ Machine learning model 1 - logical regression model with the original training d
 * When fitting the logical regression model with oversampled data, the model's accuracy showed dramatic improvement in all categories.
   * The balanced accuracy score rose from 95.2% to 99.5%.
   * The classification report resulted in weighted averages of 100% in all categories (precision, recall and f-1 score).
-   ![Classification Report - Oversampled](/Images/Classification_Report_Oversamples.jpg "Classification_Report_Oversampled")
+   ![Classification Report - Oversampled](/Images/Classification_Report_Oversampled.jpg "Classification_Report_Oversampled")
   * The confusion matirx showed extremely high accuracies.
   ![Confusion Matrix - Original](/Images/Confusion_Matrix_Original.jpg "Confusion Matrix - Original")
 
