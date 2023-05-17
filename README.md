@@ -18,8 +18,7 @@ Machine learning model 1 - logical regression model with the original training d
   * Similarly high recall values show that of all the loans that eventually proved to be healthy, the model correctly predicted this 99% of the time, and also predicated 91% of the high risk loans.
   * A weighted average F1 score of 99% demonstrates an extremely high combination of both precision and recall.
   * The confusion matrix further confirms the high reliability of the model.
-  ![Confusion Matrix - Original](./Images/Confusion Matrix - Original.jpg?raw=true "Confusion Matrix - Original")
-
+  ![Confusion Matrix - Original](/Images/Confusion_Matrix_Original.jpg "Confusion Matrix - Original")
 
 
 * Machine learning model 2 - logical regression model with oversampled data:
