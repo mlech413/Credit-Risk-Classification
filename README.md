@@ -11,8 +11,14 @@ The following was performed:
 
 ## Results
 
-* Machine learning model 1 - logical regression model with the original training data:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+Machine learning model 1 - logical regression model with the original training data:
+* The logical regression model is a very good predictor of healthy loans:
+  * A strong balanced accuracy score of 95.2%.
+  * High precision scores show that out of all the loans that the model predicted as heathly, all 100% actually were, while 85% of the predicted high-risk loans actually were.
+  * Similarly high recall values show that of all the loans that eventually proved to be healthy, the model correctly predicted this 99% of the time, and also predicated 91% of the high risk loans.
+  * A weighted average F1 score of 99% demonstrates an extremely high combination of both precision and recall.
+  * The confusion matrix further confirms the high reliability of the model.
+  ![Confusion Matrix - Original](./Images/Confusion Matrix - Original.jpg?raw=true "Confusion Matrix - Original")
 
 
 
