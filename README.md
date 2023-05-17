@@ -11,8 +11,10 @@ The following was performed:
 
 ## Results
 
-Machine learning model 1 - logical regression model with the original training data:
-* The logical regression model is a very good predictor of healthy loans:
+### Machine learning model 1 - logical regression model with the original training data:  
+
+The logical regression model is a very good predictor of healthy loans:  
+
   * A strong balanced accuracy score of 95.2%.
   * High precision scores show that out of all the loans that the model predicted as heathly, all 100% actually were, while 85% of the predicted high-risk loans actually were.
   * Similarly high recall values show that of all the loans that eventually proved to be healthy, the model correctly predicted this 99% of the time, and also predicated 91% of the high risk loans.
@@ -21,12 +23,14 @@ Machine learning model 1 - logical regression model with the original training d
    ![Classification Report - Original](/Images/Classification_Report_Original.jpg "Classification_Report_Original")
 
   * The confusion matrix further confirms the high reliability of the model.
-  
+
   ![Confusion Matrix - Original](/Images/Confusion_Matrix_Original.jpg "Confusion Matrix - Original")
 
 
-* Machine learning model 2 - logical regression model with oversampled data:
-* When fitting the logical regression model with oversampled data, the model's accuracy showed dramatic improvement in all categories.
+### Machine learning model 2 - logical regression model with oversampled data:  
+
+When fitting the logical regression model with oversampled data, the model's accuracy showed dramatic improvement in all categories.  
+
   * The balanced accuracy score rose from 95.2% to 99.5%.
   * The classification report resulted in weighted averages of 100% in all categories (precision, recall and f-1 score).
 
